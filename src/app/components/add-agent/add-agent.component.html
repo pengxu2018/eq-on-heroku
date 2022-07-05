@@ -1,0 +1,46 @@
+<h3>Add Agent Details</h3>
+
+<form id="add-new-agent-details" [formGroup]="form" (ngSubmit)="saveAgent()">
+
+    <mat-form-field class="add-new-agent-field">
+        <input type="text" matInput placeholder="Agent ID" formControlName = "id" > 
+    </mat-form-field> 
+
+    <mat-form-field class="add-new-agent-field">
+        <input type="text" matInput placeholder="Agent Name" formControlName = "bwmAgentName"> 
+    </mat-form-field>
+
+    <mat-form-field class="add-new-agent-field">
+        <input type="text" matInput placeholder="Agent Code" formControlName = "bwmAgentCode" > 
+    </mat-form-field>
+
+    <mat-form-field class="add-new-agent-field">
+        <input type="text" matInput placeholder="Agent Password" formControlName = "bwmAgentPassword" > 
+    </mat-form-field>
+    <br/>
+
+    <mat-form-field appearance="fill" class="add-new-agent-field">
+        <mat-label>Level</mat-label>
+        <select matNativeControl formControlName = "bwmAgentSecurityLevel">
+          <option value="" selected></option>
+          <option value="1">Level 1</option>
+          <option value="2">Level 2</option>
+          <option value="3">Level 3</option>
+        </select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="add-new-agent-field">
+        <mat-label>Active</mat-label>
+        <select matNativeControl formControlName = "bwmActive">
+          <option value="" selected></option>
+          <option value="1">Active</option>
+          <option value="0">Suspended</option>
+        </select>
+    </mat-form-field>
+
+    <br/>
+
+    <button mat-raised-button class="application-details-button add-new-agent-field">Reset Password</button>
+    <button mat-raised-button class="application-details-button add-new-agent-field" type="submit">Save</button>
+    <button mat-raised-button class="application-details-button add-new-agent-field">Cancel</button>
+</form>

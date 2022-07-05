@@ -1,0 +1,42 @@
+
+
+
+
+
+<section id="login-header">
+
+</section>
+
+<section id="hero-section" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card id="login-card" >
+        <mat-card-title>
+            <img src="../../../assets/logo-light-blue.png" alt="logo1">
+        </mat-card-title>
+
+        <mat-card-content>
+            <form>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="User Name"> 
+                </mat-form-field> 
+            <br>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Password"> 
+                </mat-form-field>
+            <br>
+            <section>
+                <mat-checkbox  color="primary" id="remember-me-box">Remember Me</mat-checkbox>
+                <span></span>
+                <mat-checkbox  color="primary" id="forget-password-box">Forget Password</mat-checkbox>
+              </section>
+            </form>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button mat-flat-button routerLink="/welcome">Login</button>
+        </mat-card-actions>
+    </mat-card>
+</section>
+
+<section id="login-footer">
+
+</section>

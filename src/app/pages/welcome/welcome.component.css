@@ -1,0 +1,82 @@
+
+
+.header{
+    background-color: #ffffff;
+    margin-bottom: 0px;
+    height: 5rem;
+}
+
+.main-body{
+    background-color: grey;
+    margin-top: 0px;
+    height: 45rem;
+}
+
+#container{
+    display: flex;
+}
+
+.child{
+    height: 100%;
+}
+
+#area1{
+    background-color:#ffffff;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#area2{
+    background-color: #c3d3dc;
+    width: 45%;
+}
+
+#area2-1{
+    margin-left: 4rem;
+}
+
+#area3{
+    background-color:#c3d3dc;
+    width: 50%;
+}
+
+
+#logo-white{
+    height: 4rem;;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+#logout-text{
+    color:#1477b8;
+}
+
+
+.child-of-area1{
+    margin-top: 5rem;
+    margin-left:1rem;
+    color:#1477b8;
+}
+
+table {
+    width: 100%;
+  }
+
+#table{
+    width: 90%;
+}
+
+#pseudo-chart{
+    width:400px;
+    height: 400px;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+#search-button-1{
+    margin-left: 2rem;
+}

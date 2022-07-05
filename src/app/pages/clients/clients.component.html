@@ -1,0 +1,130 @@
+<section class="header">
+    <app-page-header></app-page-header>
+    
+</section>
+
+<section class="main-body" id="container">
+
+    <div class="child" id="area1">
+        <app-left-panel></app-left-panel>
+    </div>
+
+
+    <div class="child" id="area2">
+
+        <div id="area2-content">
+
+
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                         (closed)="panelOpenState = false" togglePosition="before" class="accordion-item mat-elevation-z0">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                         <b>Search Existing Records</b> 
+                        </mat-panel-title>
+                       </mat-expansion-panel-header>
+                       <div>
+                        <form>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Search Client IDs"> 
+                            </mat-form-field> 
+                        <br>
+                        <div>
+                            <mat-checkbox  color="primary" class="checkbox">First Time Caller</mat-checkbox>
+                            <mat-checkbox  color="primary" id="checkbox">Bisaver</mat-checkbox>
+                        </div>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Last Name"> 
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="SSN" > 
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Phone Number"> 
+                            </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="State"> 
+                        </mat-form-field> 
+                       <br>
+                       
+                          
+                          <button mat-raised-button class="detail-page-buttons">Search</button>
+                        </form>
+                    </div>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                         (closed)="panelOpenState = false" togglePosition="before" class="accordion-item mat-elevation-z0">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                         <b>Search Results</b> 
+                        </mat-panel-title>
+                       </mat-expansion-panel-header>
+                       <div>
+                        <mat-form-field>
+                          <input (keyup)="applyFilter($event)"  matInput placeholder="Global Search">
+                        </mat-form-field>
+                
+                        <div class="mat-elevation-z8" id="table">
+                        <table mat-table [dataSource]="dataSource"  matSort>
+                
+                            <!--- Note that these columns can be defined in any order.
+                                  The actual rendered columns are set as a property on the row definition" -->
+                          
+                           
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="name">
+                              <th mat-header-cell mat-sort-header *matHeaderCellDef> Name </th>
+                              <td mat-cell *matCellDef="let element" routerLink="/client-detail"> {{element.name}} </td>
+                            </ng-container>
+                          
+                            <!-- Weight Column -->
+                            <ng-container matColumnDef="id">
+                              <th mat-header-cell mat-sort-header *matHeaderCellDef> ID </th>
+                              <td mat-cell *matCellDef="let element" routerLink="/client-detail"> {{element.id}} </td>
+                            </ng-container>
+                          
+                            <!-- Symbol Column -->
+                            <ng-container matColumnDef="status">
+                              <th mat-header-cell mat-sort-header *matHeaderCellDef> Status </th>
+                              <td mat-cell *matCellDef="let element" routerLink="/client-detail"> {{element.status}} </td>
+                            </ng-container>
+                
+                            <ng-container matColumnDef="phone">
+                                <th mat-header-cell mat-sort-header *matHeaderCellDef> Phone#</th>
+                                <td mat-cell *matCellDef="let element" routerLink="/client-detail"> {{element.phone}} </td>
+                            </ng-container>
+                
+                            <ng-container matColumnDef="lastContactDate">
+                                <th mat-header-cell mat-sort-header *matHeaderCellDef> Last Contact Date </th>
+                                <td mat-cell *matCellDef="let element" routerLink="/client-detail"> {{element.lastContactDate}} </td>
+                              </ng-container>
+                          
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                          </table>
+                          <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                             showFirstLastButtons >
+                          </mat-paginator>
+                          </div>
+                          
+                          
+                          
+                          
+                    </div>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+        
+    </div>
+
+
+    </div>
+
+</section>

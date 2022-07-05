@@ -1,0 +1,175 @@
+
+
+.header{
+    background-color: #ffffff;
+    margin-bottom: 0px;
+    height: 5rem;
+}
+
+.main-body{
+    background-color: grey;
+    margin-top: 0px;
+    height: 45rem;
+}
+
+#container{
+    display: flex;
+}
+
+.child{
+    height: 100%;
+    
+}
+
+#area1{
+    background-color:#ffffff;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#area2{
+    background-color: #c3d3dc;
+    width: 75%;
+    min-height: 250vh;
+}
+
+
+#area3{
+    background-color: #c3d3dc;
+    width: 20%;
+    min-height: 250vh;
+
+}
+
+#content2{
+    background-color: #c3d3dc;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+
+#content3{
+    margin-top: 2rem;
+}
+
+.line{
+    height: 4px;
+    color: black;
+}
+
+#logo-white{
+
+    height: 4rem;
+
+}
+
+.circle {
+    width: 55px;
+    height: 55px;
+    /*
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    */
+    border-radius: 25px;
+    background:#c3d3dc;
+    margin-right: 0em;
+    /*border: 3px solid black;*/
+  }
+
+.circle-area{
+    width:2rem;
+}
+
+.circle-picture{
+    width: 2rem;
+    margin-top: 8px;
+    margin-left: 12px;
+    /*height:2rem;*/
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+#logout-text{
+    color:#1477b8;
+}
+
+
+.child-of-area1{
+    margin-top: 5rem;
+    margin-left:1rem;
+    color:#1477b8;
+}
+
+table {
+    width: 100%;
+  }
+
+#table{
+    width: 90%;
+}
+
+.panel{
+    background-color: #c3d3dc;
+}
+
+#first-panel{
+    margin-top: 5rem;
+}
+
+mat-form-field{
+    margin-right: 2rem;
+}
+
+.checkbox{
+    margin-right: 2rem;
+}
+
+
+mat-radio-button{
+    margin-right: 2rem;
+}
+
+.accordion-item{
+    background-color: #c3d3dc;
+}
+
+
+
+#two-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  
+}
+
+.detail-page-buttons{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.application-details-button{
+    margin-right: 3rem;
+}
+
+.progress-container{
+    display:flex;
+}
+
+
+.progress-area-1{
+    width:50%;
+}
+
+
+/*
+.highlight {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+ }
+
+ */

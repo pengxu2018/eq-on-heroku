@@ -1,0 +1,28 @@
+#login-card{
+    background-color:#c3d3dc;
+    width: 30rem;
+    min-height: 25rem;
+    text-align:center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+#hero-section{
+    background-color: #1477b8;
+    height: 600px;
+    
+}
+
+#login-header{
+    background-color: #c3d3dc;
+    height:100px;
+}
+
+#login-footer{
+    background-color: #c3d3dc;
+    height:100px;
+}
+
+#remember-me-box{
+    margin-right: 1rem;
+}

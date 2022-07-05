@@ -1,0 +1,394 @@
+<section class="header">
+    <app-page-header></app-page-header>
+</section>
+
+<section class="main-body" id="container">
+
+    <div class="child" id="area1">
+        <app-left-panel></app-left-panel>  
+    </div>
+
+
+    <div class="child" id="area2">
+        <div id="content2">
+        
+                <hr class="line">
+                <mat-accordion >
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                         (closed)="panelOpenState = false" togglePosition="before" class="accordion-item">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                         <b>Client Data</b> 
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div>
+                        <form>
+                            <mat-form-field >
+                                <input class="highlight" type="text" matInput placeholder="Primary First Name"> 
+                            </mat-form-field> 
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Middle Name"> 
+                            </mat-form-field> 
+                            <mat-form-field>
+                                <input class="highlight" type="text" matInput placeholder="Primary Last Name"> 
+                            </mat-form-field> 
+                        <br>
+                        
+                            <mat-form-field>
+                                <input class="highlight" type="text" matInput placeholder="Primary DOB"> 
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Primary SSN" > 
+                            </mat-form-field>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Languages</mat-label>
+                                <select matNativeControl >
+                                  <option value="" selected></option>
+                                  <option value="saab">Option 1</option>
+                                  <option value="mercedes">Option 2</option>
+                                  <option value="audi">Option 3</option>
+                                </select>
+                            </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <input class="highlight" type="text" matInput placeholder="Property Address"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input class="highlight" type="text" matInput placeholder="City"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input class="highlight" type="text" matInput placeholder="State"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input class="highlight" type="text" matInput placeholder="Zip Code"> 
+                        </mat-form-field> 
+                       <br>
+                       <mat-form-field>
+                        <input type="text" matInput placeholder="Mailing Address"> 
+                       </mat-form-field> 
+                        <mat-form-field>
+                        <input type="text" matInput placeholder="City"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                        <input type="text" matInput placeholder="State"> 
+                        </mat-form-field> 
+                         <mat-form-field>
+                           <input type="text" matInput placeholder="Zip Code"> 
+                         </mat-form-field> 
+                         <br>
+                         <div>
+                            <mat-checkbox  color="primary" class="checkbox">Same as Property Address</mat-checkbox>
+                        </div>
+                        <br>
+                         <mat-form-field>
+                            <input class="highlight" type="text" matInput placeholder="Pramary Phone"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Secondary Phone"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input class="highlight" type="text" matInput placeholder="Email"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Fax"> 
+                        </mat-form-field> 
+                        <br>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Follow Up Date"> 
+                        </mat-form-field> 
+                        <br>
+                        </form>
+                    </div>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+
+                
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                         (closed)="panelOpenState = false" togglePosition="before" class="accordion-item">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b>Financial Data</b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div>
+                        <form> 
+                            <mat-form-field appearance="fill">
+                                <mat-label>Loan Type</mat-label>
+                                <select matNativeControl >
+                                  <option value="" selected></option>
+                                  <option value="saab">Option 1</option>
+                                  <option value="mercedes">Option 2</option>
+                                  <option value="audi">Option 3</option>
+                                </select>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Loan Amount"> 
+                            </mat-form-field> 
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Rate"> 
+                            </mat-form-field> 
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Term"> 
+                            </mat-form-field> 
+                        <br>
+                        
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Regular Payment"> 
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Monthly P&I" > 
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Monthly Escrow"> 
+                            </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Due Date"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Grace Period"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="First Payment"> 
+                        </mat-form-field> 
+                        
+                       <br>
+                       <mat-form-field>
+                        <input type="text" matInput placeholder="Loan Number"> 
+                       </mat-form-field> 
+                        <mat-form-field appearance="fill">
+                            <mat-label>Lender</mat-label>
+                            <select matNativeControl >
+                              <option value="" selected></option>
+                              <option value="saab">Option 1</option>
+                              <option value="mercedes">Option 2</option>
+                              <option value="audi">Option 3</option>
+                            </select>
+                        </mat-form-field>
+                        <mat-form-field>
+                        <input type="text" matInput placeholder="Phone Number"> 
+                        </mat-form-field> 
+                        <br>
+                         <mat-form-field>
+                            <input type="text" matInput placeholder="Mainling Address"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="City"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="State"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Zip Code"> 
+                        </mat-form-field> 
+                        <br>
+                        <mat-form-field appearance="fill">
+                            <mat-label>ACH Type</mat-label>
+                            <select matNativeControl >
+                              <option value="" selected></option>
+                              <option value="saab">Option 1</option>
+                              <option value="mercedes">Option 2</option>
+                              <option value="audi">Option 3</option>
+                            </select>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="ABA Number"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Account Number"> 
+                        </mat-form-field> 
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Account Name"> 
+                        </mat-form-field> 
+                        <br>
+                        </form>
+                    </div>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                         (closed)="panelOpenState = false" togglePosition="before" class="accordion-item">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <b>Application Details</b>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div>
+                        <form>
+                            <mat-radio-group >
+                                <mat-radio-button class="example-margin" value="biweekly" color="primary">Bi Weekly</mat-radio-button>
+                                <mat-radio-button class="example-margin" value="semimonthly" color="primary">Semi Monthly</mat-radio-button>
+                                <mat-radio-button class="example-margin" value="weekly" color="primary">Weekly</mat-radio-button>
+                            </mat-radio-group>
+                            <br>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="BMP Draft"> 
+                            </mat-form-field> 
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Extra"> 
+                            </mat-form-field> 
+                            <br>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Usual Draft"> 
+                            </mat-form-field> 
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="First Draft"> 
+                            </mat-form-field> 
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Start BMP"> 
+                            </mat-form-field>
+                            <br>
+                            <button mat-raised-button class="application-details-button">Preview Amorization</button>
+
+                            <br/><br/>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Payment Amount</mat-label>
+                                <select matNativeControl >
+                                  <option value="" selected></option>
+                                  <option value="saab">Option 1</option>
+                                  <option value="mercedes">Option 2</option>
+                                  <option value="audi">Option 3</option>
+                                </select>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Payment Date"> 
+                            </mat-form-field>
+                            <br>
+                            <button mat-raised-button class="application-details-button">Send Verification</button>
+                            <button mat-raised-button class="application-details-button">Send Application</button>
+    
+                        </form>
+    
+                    </div>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+
+
+
+                  <div id="two-buttons">
+                    <button mat-raised-button class="detail-page-buttons">Save</button>
+
+                    <button mat-raised-button class="detail-page-buttons">Cancel</button>
+                  </div>
+
+
+
+
+                  
+
+              
+                
+                
+              
+        </div>
+        
+          
+    </div>
+
+    <div class="child" id="area3">
+        <div id="content3">
+        customer ID: 5465464
+        <br/>
+        Last updated: 10/20/2021
+
+        <br/><br/>
+
+        
+
+          <mat-form-field appearance="fill">
+            <mat-label>Sales Person</mat-label>
+            <select matNativeControl >
+              <option value="" selected></option>
+              <option value="saab">Sales Person 1</option>
+              <option value="mercedes">Sales Person 2</option>
+              <option value="audi">Sales Person 3</option>
+            </select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Referral Source</mat-label>
+            <select matNativeControl >
+              <option value="" selected></option>
+              <option value="volvo">Referral Source 1</option>
+              <option value="saab">Referral Source 2</option>
+              <option value="mercedes">Referral Source 3</option>
+              <option value="audi">Referral Source 4</option>
+            </select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Status</mat-label>
+            <select matNativeControl >
+              <option value="" selected></option>
+              <option value="volvo">Record Created</option>
+              <option value="saab">Pending</option>
+              <option value="mercedes">Accepted</option>
+            </select>
+          </mat-form-field>
+
+
+          <div class="progress-container">
+              <div class="progress-area-1">
+                  Record Created<br/>
+                  10/15/2020<br/>
+                
+              </div>
+
+              <div class="circle-area">
+                  <div class="circle">
+                    <img src="../../../assets/RecordCreatedInactive.png" alt="" class="circle-picture">
+                  </div>
+              </div>
+              
+          </div>
+
+          <br/>
+
+          <div class="progress-container">
+              <div class="progress-area-1">
+                  Pending<br/>
+                  12/06/2020<br/>
+              </div>
+              <div class="circle-area">
+                 <div class="circle">
+                    <img src="../../../assets/RecordPendingActive.png" alt="" class="circle-picture">
+                 </div>
+              </div>
+              
+              
+          </div>
+
+          <br/>
+
+          <div class="progress-container">
+              <div class="progress-area-1">
+                  Accepted<br/>
+                  10/21/2021<br/>
+              </div>
+              <div class="circle-area">
+                  <div class="circle">
+                    <img src="../../../assets/RecordAcceptedActive.png" alt="" class="circle-picture">
+                  </div>
+              </div>
+              
+
+          </div>
+          <br/><br/><br/>
+
+          <textarea rows="4" cols="25" >
+Notes:
+          </textarea>
+
+        </div>
+
+
+    </div>
+
+
+
+  
+   
+
+</section>
